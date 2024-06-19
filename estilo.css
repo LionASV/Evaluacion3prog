@@ -1,0 +1,288 @@
+/*  * Sirve para añadir estilos a toda la pagina */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo{
+    background-color: white;
+}
+
+
+.hero{
+    background-image:linear-gradient(rgba(255, 238, 0, 0.425),rgba(247, 246, 203, 0.449)),   url("IMG/01g2svkdt1xexaaagynj.webp");
+    height: 1400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+.texto-hero{
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-65{
+    font-size: 70px;
+    text-shadow: 0 0 7px black;
+}
+
+.texto-50{
+    font-size: 50px;
+    text-shadow: 0 0 7px black;
+}
+
+.texto-45{
+    font-size: 40px;
+    text-shadow: 0 0 7px black;
+}
+
+/* INICIO SECCION INFO */
+.info{
+    background-color: white;
+    color:  black;
+}
+.contenedor{
+    width: 40%;
+    margin: auto;
+    padding: 80px 0;
+}
+.titulo-info{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* FIN SECCION INFO */
+
+/* SECCION CARDS */
+
+.contenedor-card{
+    display: flex;
+    width: 100%;
+    border-radius: 70%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 0 30px 0 black;
+    border-radius: 20px;
+}
+
+.card:hover{
+    box-shadow: 0 0 20px 0 black;
+    transform: scale(1.1);
+    transition: transform 0.4s;
+    cursor: auto;
+}
+
+/* todas las etiquetas i dentro de la clase card obtienen estos estilos */
+
+.card i{
+    color: black;
+    font-size: 20px;
+}
+
+.card h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.boton{
+    background: transparent;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.margen-icon{
+    margin-top: 15px;
+}
+
+
+/* FIN SECCION CARD */
+/* SECCION GALERIA */
+.contenedor-imagen{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.contenedor-imagen img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 35px;
+    display: block;
+    box-shadow: 0 0 10px 0 black;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.galeria{
+    color: rgba(206, 116, 116, 0.19);
+    background-color: rgba(161, 83, 83, 0.23);
+    box-shadow: 0 0 10px 0 rgb(14, 6, 6);
+    display: flex;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+/* FINSECCION GALERIA */
+
+/* Contacto */
+
+.contacto{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.9),rgba(2, 0, 0, 0.9)),   url("img/pj-f123-bel-w01-rus-unmarked.jpg.adapt.crop191x100.628p.jpg");
+    color: white;
+    text-shadow: 0 0 40px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-x: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    width: 30%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.input{
+    background-color: transparent;
+    border: 0;
+    color: red;
+    outline: none;
+    border: 1px solid red;
+
+}
+
+.input::placeholder{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+}
+
+.input-ancho{
+    width: 40%;
+    margin-bottom: 30px;
+    display: inline-block;
+    height: 40px;
+    font-size: 15px;
+}
+
+.textarea-ancho{
+    width: 99%;
+    margin-bottom: 15px;
+}
+
+.nav{
+    list-style-type: none;
+    background-color: black;
+    width: 30%;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.nav li{
+    float: left;
+}
+
+
+.nav li a{
+    color: white;
+    padding: 14px 16px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+.nav li a:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px; /* Ajusta esto según tus necesidades */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+}
+
+.card-header, .card-body, .card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.card-header h3, .card-footer input {
+    margin: 10px 0;
+}
+
+.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-check {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
